@@ -1,0 +1,203 @@
+:root {
+  --mainWhite: #f5f5f5f5;
+  --mainDark: #333333;
+  --mainGreen: #317b22;
+  --mainRed: #b80c09;
+  --mainBlue: #05668d;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: "Montserrat";
+}
+.budget-feedback,
+.expense-feedback {
+  display: none;
+}
+
+.budget-form {
+  border: 0.15rem solid var(--mainGreen);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.expense-form {
+  border: 0.15rem solid var(--mainRed);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.budget-submit {
+  background: transparent;
+  border: 0.1rem solid var(--mainGreen);
+  color: var(--mainGreen);
+}
+.expense-submit {
+  background: transparent;
+  border: 0.1rem solid var(--mainRed);
+  color: var(--mainRed);
+}
+.expense-submit:hover {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+}
+.budget-submit:hover {
+  background: var(--mainGreen);
+  color: var(--mainDark);
+}
+
+.budget-input {
+  border: 0.05rem solid var(--mainGreen) !important;
+}
+.expense-input {
+  border: 0.05rem solid var(--mainRed) !important;
+}
+.expense-amount,
+.expense-title {
+  color: var(--mainRed);
+}
+.edit-icon {
+  color: var(--mainBlue);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.delete-icon {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.edit-icon:hover {
+  color: var(--mainBlue);
+}
+.delete-icon:hover {
+  color: var(--mainRed);
+}
+.showItem {
+  display: block;
+}
+.info-title {
+  font-size: 1.5rem;
+}
+.budget {
+  font-size: 1.6rem;
+  color: var(--mainGreen);
+}
+.expense {
+  font-size: 1.6rem;
+  color: var(--mainRed);
+}
+.balance {
+  font-size: 1.6rem;
+}
+.budget-icon,
+.expense-icon,
+.balance-icon {
+  font-size: 2.5rem;
+  color: var(--mainBlue);
+}
+.showRed {
+  color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+@media screen and (min-width: 992px) {
+  .budget {
+    font-size: 2.6rem;
+    color: var(--mainGreen);
+  }
+  .expense {
+    font-size: 2.6rem;
+    color: var(--mainRed);
+  }
+  .balance {
+    font-size: 2.6rem;
+  }
+  .budget-icon,
+  .expense-icon,
+  .balance-icon {
+    font-size: 3.5rem;
+    color: var(--mainBlue);
+  }
+}
+.list-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+.expense-item {
+  height: 2rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Heading */
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #076e61; /* #ff4c68; */
+  color: #fff;
+  text-align: center;
+  /* #076e61 */
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 0 0 4.5rem;
+}
+.navbar-logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 25px;
+  border-radius: 20%;
+}
+.navbar-brand {
+  font-style: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+}
+
+/* Title Section  */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+.title-image {
+  height: 300px;
+  width: 450px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #a4fcdf;
+  text-align: center;
+}
+.social-icon {
+  margin: 20px 10px;
+}
