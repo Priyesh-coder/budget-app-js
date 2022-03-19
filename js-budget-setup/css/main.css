@@ -142,11 +142,6 @@ p {
   font-size: 3rem;
   line-height: 1.5;
 }
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
 /* Containers */
 .container-fluid {
   padding: 7% 15%;
@@ -200,4 +195,30 @@ footer {
 }
 .social-icon {
   margin: 20px 10px;
+}
+@media (min-width: 350px) and (max-width: 586px) {
+  #title .container-fluid {
+    padding: 2% 8% 5%;
+  }
+  .title-image {
+    height: 200px;
+    width: 300px;
+  }
+  .navbar-logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+  }
+  .big-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .info-title {
+    font-size: 1rem;
+  }
 }
